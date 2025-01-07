@@ -1,0 +1,83 @@
+.card {
+  background: white;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.productImage {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.productInfo {
+  margin-top: 1rem;
+}
+
+.productTitle {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.productPrice {
+  color: #1a1a1a;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.quantityControl {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.quantityBtn {
+  background: #1a1a1a;
+  color: white;
+  border: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quantityBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.quantityDisplay {
+  width: 40px;
+  text-align: center;
+}
+
+.addToCart {
+  background: #1a1a1a;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  transition: background 0.3s ease;
+}
+
+.addToCart:hover {
+  background: #333;
+}
+
+.addBtn {
+  background: #1a1a1a;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}

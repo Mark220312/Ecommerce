@@ -1,0 +1,111 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.mainContent {
+  display: flex;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.filters {
+  width: 250px;
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.filterGroup {
+  margin-bottom: 1.5rem;
+}
+
+.filterGroup h3 {
+  margin-bottom: 0.5rem;
+}
+
+.priceInputs {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.priceInputs input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.priceInputs input:focus {
+  outline: none;
+  border-color: #1a1a1a;
+}
+
+.filterGroup div {
+  margin-bottom: 0.5rem;
+}
+
+.filterGroup input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+
+.filterGroup label {
+  font-size: 0.9rem;
+  color: #1a1a1a;
+}
+
+.productsGrid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.productCard {
+  background: white;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.productImage {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.productInfo {
+  margin-top: 1rem;
+}
+
+.productTitle {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.productPrice {
+  color: #1a1a1a;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.addToCart {
+  background: #1a1a1a;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  transition: background 0.3s ease;
+}
+
+.addToCart:hover {
+  background: #333;
+}

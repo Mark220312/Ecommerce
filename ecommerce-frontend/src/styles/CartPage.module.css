@@ -1,0 +1,133 @@
+.cartContainer {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.cartItems {
+  flex: 2;
+}
+
+.cartSummary {
+  flex: 1;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: fit-content;
+}
+
+.cartItem {
+  display: flex;
+  gap: 2rem;
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.cartImage {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.itemDetails {
+  flex: 1;
+}
+
+.itemName {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.itemPrice {
+  color: #1a1a1a;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.quantityControl {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.quantityBtn {
+  background: #1a1a1a;
+  color: white;
+  border: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 0%;
+}
+
+.quantityBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.removeBtn {
+  background: #dc2626;
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+  width: 20%;
+}
+
+.summaryItem {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+.total {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.payBtn {
+  background: #1a1a1a;
+  color: white;
+  border: none;
+  padding: 1rem;
+  width: 100%;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background 0.3s ease;
+}
+
+.payBtn:hover {
+  background: #333;
+}
+
+.emptyCart {
+  text-align: center;
+  padding: 3rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.emptyCart h2 {
+  margin-bottom: 1rem;
+  color: #1a1a1a;
+}
+
+.emptyCart a {
+  color: #3b82f6;
+  text-decoration: none;
+}
