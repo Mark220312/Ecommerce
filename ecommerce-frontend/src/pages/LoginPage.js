@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import Navbar from '../components/Navbar.js';
 import styles from '../styles/LoginPage.module.css';
+import { Link } from 'react-router-dom';
 
 const Login = () => {
   const [formData, setFormData] = useState({ email: '', password: '' });
@@ -18,7 +18,8 @@ const Login = () => {
 
   return (
     <>
-      <Navbar />
+    <body className={styles.bodylogin}>
+      <div className={styles.logincontainer}>
       <form onSubmit={handleSubmit} class={styles.form}>
         <h2>Iniciar Sesión</h2>
         <label>Email</label>
@@ -35,9 +36,11 @@ const Login = () => {
           onChange={(e) => setFormData({ ...formData, password: e.target.value })}
           required
         />
-        <button type="submit">Ingresar</button>
+        <button className={styles.buttonsubmit} type="submit"><Link to="/home" className={styles.link}>Ingresar</Link></button>
         {error && <p class={styles.error}>{error}</p>}
       </form>
+      </div>
+    </body>
     </>
   );
 };

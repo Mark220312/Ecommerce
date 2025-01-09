@@ -12,8 +12,8 @@ const App = () => {
     <CartProvider>
     <Router>
       <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/login" element={<Login />} />
+        <Route path="/home" element={<HomePage />} />
+        <Route path="/" element={<Login />} />
         <Route path="/carrito" element={<Cart />} />
         <Route path="/contacto" element={<Contact />} />
       </Routes>
